@@ -106,9 +106,8 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
   Gambar 3 – Multivariate Numerikal 
 </p>
 <br>
-
 ### Insight : 
--Deteksi kemungkinan moderate redundant features (nilai korelasi tinggi >= 0.6).
+-Deteksi kemungkinan moderate redundant features (nilai korelasi tinggi >= 0.6).
 1. ‘Administrative’ dan ‘Administrative_Duration’
 2. ‘Informational’ dan ‘Informational_Duration’
 
@@ -119,7 +118,7 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
 - Kolom yang berpotensi redundant, kemungkinan akan di hapus salah satu pada tahap Data Processing.
 - Korelasi target ‘Revanue' memiliki korelasi positif kuat dengan fitur ‘PageValues’ (0.50).
 <br>
-
+<br>
 <p align="center">
 
   ![MultivariateKategorikal](https://github.com/Juliana9417/Final_Project/assets/172182011/3300d7f4-e99b-41e6-a9ab-ee9ef80114c5)
@@ -127,7 +126,6 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
   Gambar 4 – Multivariate Kategorikal
 </p>
 <br>
-
 ### Insight : <br>
 - Korelasi yang cukup kuat antar kolom: <br>
 1. ‘VisitorType’ dan ‘OperatingSystems’ 
@@ -148,13 +146,13 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
   Gambar 5 – Visitor Type Vs Revenue
 </p>
 <br>
-#### Insight <br>
+### Insight <br>
 - Terdapat tiga jenis visitor : <br>
 1. Jumlah "Returning visitor" paling banyak, namun persentase pengunjung yang menghasilkan revenue paling sedikit dibanding dua jenis lainnya.
 2. Pengunjung "New Visitor" lebih sedikit daripada "Returning visitor", namun memiliki persentase pendapatan tertinggi dibanding dua jenis lainnya, yaitu 24.65%.
 3. Pengunjung "Other" memiliki persentase pendapatan sebesar 17.98%, lebih rendah dari "New Visitor" tetapi lebih tinggi dari "Returning visitor".
 <br>
-
+<br>
 <p align="center">
 
   ![Month](https://github.com/Juliana9417/Final_Project/assets/172182011/ee64fe96-e4fd-4879-8238-756c539a5604)
@@ -167,7 +165,7 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
 2. Bulan-bulan dengan jumlah revenue yang signifikan tinggi lainnya adalah Mei (379) dan Maret (201).
 3. Februari memiliki jumlah revenue yang paling rendah (3), menunjukkan bahwa ini adalah bulan dengan performa paling rendah dalam hal pendapatan.
 <br>
-
+<br>
 <p align="center">
 
   ![Region](https://github.com/Juliana9417/Final_Project/assets/172182011/74032eb8-7e71-42d1-862e-11f0b3751e2f)
@@ -178,7 +176,7 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
 ### Insight <br>
 1. Wilayah 2 memiliki persentase pendapatan tertinggi (16.64%), diikuti oleh Wilayah 9 (16.54%), dan Wilayah 5 (16.32%).
 <br>
-
+<br>
 <p align="center">
 
   ![Weekend](https://github.com/Juliana9417/Final_Project/assets/172182011/cdc11647-39c0-4789-8450-7131ec004786)
@@ -190,7 +188,7 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
 1. Persentase pengunjung yang menghasilkan pendapatan lebih tinggi pada akhir pekan (17.50%) dibandingkan dengan hari biasa (14.91%).
 2. Grafik menunjukkan meskipun jumlah pengunjung lebih rendah pada akhir pekan, potensi pengunjung melakukan transaksi lebih besar dibandingkan hari biasa.
 <br>
-
+<br>
 <p align="center">
 
 ![ProductRelated](https://github.com/Juliana9417/Final_Project/assets/172182011/c074167e-426a-49b8-b420-bc10f423fb2e)
