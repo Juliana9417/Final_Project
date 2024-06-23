@@ -31,6 +31,7 @@
   Tabel 1 – Informasi Data <br>
   <kbd><img src="InformasiData.png" width=650px> </kbd> <br>
 </p>
+![InformasiData](https://github.com/Juliana9417/Final_Project/assets/172182011/ac551e0f-ec91-4a4a-b7f9-7ae2e1e75501)
 
 ### Descriptive Statistics
 
