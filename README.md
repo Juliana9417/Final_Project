@@ -29,20 +29,32 @@
 ### Dataset
 <p align="center">
   Tabel 1 – Informasi Data <br>
-  <kbd><img src="InformasiData.png" width=650px> </kbd> <br>
+</p>
+
+<p align="center">
+  <img src="https://github.com/Juliana9417/Final_Project/assets/172182011/ac551e0f-ec91-4a4a-b7f9-7ae2e1e75501" alt="InformasiData">
 </p>
 
 ### Descriptive Statistics
 
 <p align="center">
-  <kbd><img src="DataDeskritiveNumerik.png" width=650px> </kbd> <br>
-  Tabel 2  – Data Deskriptive Numerikal
+  Tabel 2  – Data Deskriptif Numerikal
 </p>
-<br>
+
 <p align="center">
-  <kbd><img src="DataDeskritiveKategori.png"width=650px> </kbd> <br>
+  <img src="https://github.com/Juliana9417/Final_Project/assets/172182011/8ad6a165-887d-40c2-acbe-42c5c2f50042" alt="DataDeskritiveNumerik">
+</p>
+
+<br>
+
+<p align="center">
    Tabel 3  – Data Deskriptive Kategori
 </p> 
+
+<p align="center">
+  <img src="https://github.com/Juliana9417/Final_Project/assets/172182011/be4758d7-f873-4a03-a39d-08743f801e8f" alt="DataDeskritiveKategori">
+</p>
+
 <br>
 
 ### Insight Data Deskriptif : 
@@ -66,22 +78,26 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
 
 ### Univariate Analisis : 
 <p align="center">
-  <kbd><img src="DisplotNumerikal" width=650px> </kbd> <br>
+  
+![DisplotNumerikal](https://github.com/Juliana9417/Final_Project/assets/172182011/406d8ad1-c3f7-4946-9328-dd0ea767e99e)
+
   Gambar 1 – Displot Numerikal 
 </p>
 <br>
-#### Insight : 
+### Insight : 
 - Semua kolom cenderung berbentuk positive skewed, dan distribusi data mendekati nilai 0.
 - Kolom ‘Informational’ dan ExitRates’ berbentuk Multimodal.
 - Kolom ‘BounceRates’ berbentuk Bimodal.
 <br>
 
 <p align="center">
-  <kbd><img src="ViolinNumerikal" width=650px> </kbd> <br>
-  Gambar 1 – Violin Numerikal 
+
+![ViolinMunerikal](https://github.com/Juliana9417/Final_Project/assets/172182011/0c32e267-eb43-465d-8300-b6f0dd293f81)
+
+  Gambar 2 – Violin Numerikal 
 </p>
 <br>
-#### Insight : 
+### Insight : 
 - Distribusi data cenderung menumpuk ekstrim mendekati nilai 0.00 pada kolom : 
 - Administrative, Administrative_Duration, Informational, Informational_Duration, ProductRelated, ProductRelated_Duration, BounceRates, dan PageValues.
 - Sementara, pada kolom ‘ExitRates’ distribusi data menumpuk di antara 0.00 - 0.05.
@@ -90,13 +106,14 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
 
 ### Multivariate Analisis : 
 <p align="center">
-  <kbd><img src="MultivariateNumerikal" width=650px> </kbd> <br>
-  Gambar 2 – Multivariate Numerikal 
+  
+![MultivariateNumerikal](https://github.com/Juliana9417/Final_Project/assets/172182011/eaf5da5b-d8f9-446f-834e-5431af3d9bec)
+ 
+  Gambar 3 – Multivariate Numerikal 
 </p>
 <br>
-
-#### Insight : 
--Deteksi kemungkinan moderate redundant features (nilai korelasi tinggi >= 0.6).
+### Insight : 
+-Deteksi kemungkinan moderate redundant features (nilai korelasi tinggi >= 0.6).
 1. ‘Administrative’ dan ‘Administrative_Duration’
 2. ‘Informational’ dan ‘Informational_Duration’
 
@@ -107,14 +124,15 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
 - Kolom yang berpotensi redundant, kemungkinan akan di hapus salah satu pada tahap Data Processing.
 - Korelasi target ‘Revanue' memiliki korelasi positif kuat dengan fitur ‘PageValues’ (0.50).
 <br>
-
+<br>
 <p align="center">
-  <kbd><img src="MultivariateKategorikal" width=650px> </kbd> <br>
-  Gambar 3 – Multivariate Kategorikal
+
+  ![MultivariateKategorikal](https://github.com/Juliana9417/Final_Project/assets/172182011/3300d7f4-e99b-41e6-a9ab-ee9ef80114c5)
+
+  Gambar 4 – Multivariate Kategorikal
 </p>
 <br>
-
-#### Insight : <br>
+### Insight : <br>
 - Korelasi yang cukup kuat antar kolom: <br>
 1. ‘VisitorType’ dan ‘OperatingSystems’ 
 2. ‘VisitorType’ dan ‘Browser’
@@ -128,53 +146,63 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
 ### Bi-Variate Analisis : 
 
 <p align="center">
-  <kbd><img src="Visitortype" width=650px> </kbd> <br>
-  Gambar 4 – Visitor Type Vs Revenue
+
+ ![Visitortype](https://github.com/Juliana9417/Final_Project/assets/172182011/df78f66a-42c2-4141-bb9f-a64523f1fdf5)
+
+  Gambar 5 – Visitor Type Vs Revenue
 </p>
 <br>
-#### Insight <br>
+### Insight <br>
 - Terdapat tiga jenis visitor : <br>
 1. Jumlah "Returning visitor" paling banyak, namun persentase pengunjung yang menghasilkan revenue paling sedikit dibanding dua jenis lainnya.
 2. Pengunjung "New Visitor" lebih sedikit daripada "Returning visitor", namun memiliki persentase pendapatan tertinggi dibanding dua jenis lainnya, yaitu 24.65%.
 3. Pengunjung "Other" memiliki persentase pendapatan sebesar 17.98%, lebih rendah dari "New Visitor" tetapi lebih tinggi dari "Returning visitor".
 <br>
-
+<br>
 <p align="center">
-  <kbd><img src="Month" width=650px> </kbd> <br>
-  Gambar 5 – Month Vs Revenue
+
+  ![Month](https://github.com/Juliana9417/Final_Project/assets/172182011/ee64fe96-e4fd-4879-8238-756c539a5604)
+
+  Gambar 6 – Month Vs Revenue
 </p>
 <br>
-#### Insight <br>
+### Insight <br>
 1. Bulan November memiliki jumlah revenue tertinggi (803) di antara semua bulan.
 2. Bulan-bulan dengan jumlah revenue yang signifikan tinggi lainnya adalah Mei (379) dan Maret (201).
 3. Februari memiliki jumlah revenue yang paling rendah (3), menunjukkan bahwa ini adalah bulan dengan performa paling rendah dalam hal pendapatan.
 <br>
-
+<br>
 <p align="center">
-  <kbd><img src="Region" width=650px> </kbd> <br>
-  Gambar 6 – Visitor per Region Vs Revenue
+
+  ![Region](https://github.com/Juliana9417/Final_Project/assets/172182011/74032eb8-7e71-42d1-862e-11f0b3751e2f)
+
+  Gambar 7 – Visitor per Region Vs Revenue
 </p>
 <br>
-#### Insight <br>
+### Insight <br>
 1. Wilayah 2 memiliki persentase pendapatan tertinggi (16.64%), diikuti oleh Wilayah 9 (16.54%), dan Wilayah 5 (16.32%).
 <br>
-
+<br>
 <p align="center">
-  <kbd><img src="Weekend" width=650px> </kbd> <br>
-  Gambar 7 – Weekend Vs Revenue
+
+  ![Weekend](https://github.com/Juliana9417/Final_Project/assets/172182011/cdc11647-39c0-4789-8450-7131ec004786)
+
+  Gambar 8 – Weekend Vs Revenue
 </p>
 <br>
-#### Insight <br>
+### Insight <br>
 1. Persentase pengunjung yang menghasilkan pendapatan lebih tinggi pada akhir pekan (17.50%) dibandingkan dengan hari biasa (14.91%).
 2. Grafik menunjukkan meskipun jumlah pengunjung lebih rendah pada akhir pekan, potensi pengunjung melakukan transaksi lebih besar dibandingkan hari biasa.
 <br>
-
+<br>
 <p align="center">
-  <kbd><img src="ProductRelated" width=650px> </kbd> <br>
-  Gambar 7 – Product Related, Administrative, Informational Vs Revenue
+
+![ProductRelated](https://github.com/Juliana9417/Final_Project/assets/172182011/c074167e-426a-49b8-b420-bc10f423fb2e)
+
+  Gambar 9 – Product Related, Administrative, Informational Vs Revenue
 </p>
 <br>
-#### Insight <br>
+### Insight <br>
 1. Interaksi pengunjung dengan halaman terkait produk (Product Related) merupakan faktor paling penting dalam mendorong pembelian.
 <br>
 
