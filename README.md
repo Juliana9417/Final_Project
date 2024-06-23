@@ -84,8 +84,10 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
 <br>
 
 <p align="center">
-  <kbd><img src="ViolinNumerikal" width=650px> </kbd> <br>
-  Gambar 1 – Violin Numerikal 
+
+![ViolinMunerikal](https://github.com/Juliana9417/Final_Project/assets/172182011/0c32e267-eb43-465d-8300-b6f0dd293f81)
+
+  Gambar 2 – Violin Numerikal 
 </p>
 <br>
 #### Insight : 
@@ -97,8 +99,10 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
 
 ### Multivariate Analisis : 
 <p align="center">
-  <kbd><img src="MultivariateNumerikal" width=650px> </kbd> <br>
-  Gambar 2 – Multivariate Numerikal 
+  
+![MultivariateNumerikal](https://github.com/Juliana9417/Final_Project/assets/172182011/eaf5da5b-d8f9-446f-834e-5431af3d9bec)
+ 
+  Gambar 3 – Multivariate Numerikal 
 </p>
 <br>
 
@@ -116,8 +120,10 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
 <br>
 
 <p align="center">
-  <kbd><img src="MultivariateKategorikal" width=650px> </kbd> <br>
-  Gambar 3 – Multivariate Kategorikal
+
+  ![MultivariateKategorikal](https://github.com/Juliana9417/Final_Project/assets/172182011/3300d7f4-e99b-41e6-a9ab-ee9ef80114c5)
+
+  Gambar 4 – Multivariate Kategorikal
 </p>
 <br>
 
@@ -135,8 +141,10 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
 ### Bi-Variate Analisis : 
 
 <p align="center">
-  <kbd><img src="Visitortype" width=650px> </kbd> <br>
-  Gambar 4 – Visitor Type Vs Revenue
+
+ ![Visitortype](https://github.com/Juliana9417/Final_Project/assets/172182011/df78f66a-42c2-4141-bb9f-a64523f1fdf5)
+
+  Gambar 5 – Visitor Type Vs Revenue
 </p>
 <br>
 #### Insight <br>
@@ -147,8 +155,10 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
 <br>
 
 <p align="center">
-  <kbd><img src="Month" width=650px> </kbd> <br>
-  Gambar 5 – Month Vs Revenue
+
+  ![Month](https://github.com/Juliana9417/Final_Project/assets/172182011/ee64fe96-e4fd-4879-8238-756c539a5604)
+
+  Gambar 6 – Month Vs Revenue
 </p>
 <br>
 #### Insight <br>
@@ -158,8 +168,10 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
 <br>
 
 <p align="center">
-  <kbd><img src="Region" width=650px> </kbd> <br>
-  Gambar 6 – Visitor per Region Vs Revenue
+
+  ![Region](https://github.com/Juliana9417/Final_Project/assets/172182011/74032eb8-7e71-42d1-862e-11f0b3751e2f)
+
+  Gambar 7 – Visitor per Region Vs Revenue
 </p>
 <br>
 #### Insight <br>
@@ -167,8 +179,10 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
 <br>
 
 <p align="center">
-  <kbd><img src="Weekend" width=650px> </kbd> <br>
-  Gambar 7 – Weekend Vs Revenue
+
+  ![Weekend](https://github.com/Juliana9417/Final_Project/assets/172182011/cdc11647-39c0-4789-8450-7131ec004786)
+
+  Gambar 8 – Weekend Vs Revenue
 </p>
 <br>
 #### Insight <br>
@@ -177,8 +191,10 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
 <br>
 
 <p align="center">
-  <kbd><img src="ProductRelated" width=650px> </kbd> <br>
-  Gambar 7 – Product Related, Administrative, Informational Vs Revenue
+
+![ProductRelated](https://github.com/Juliana9417/Final_Project/assets/172182011/c074167e-426a-49b8-b420-bc10f423fb2e)
+
+  Gambar 9 – Product Related, Administrative, Informational Vs Revenue
 </p>
 <br>
 #### Insight <br>
