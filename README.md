@@ -78,7 +78,7 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
   Gambar 1 – Displot Numerikal 
 </p>
 <br>
-#### Insight : 
+### Insight : 
 - Semua kolom cenderung berbentuk positive skewed, dan distribusi data mendekati nilai 0.
 - Kolom ‘Informational’ dan ExitRates’ berbentuk Multimodal.
 - Kolom ‘BounceRates’ berbentuk Bimodal.
@@ -91,7 +91,7 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
   Gambar 2 – Violin Numerikal 
 </p>
 <br>
-#### Insight : 
+### Insight : 
 - Distribusi data cenderung menumpuk ekstrim mendekati nilai 0.00 pada kolom : 
 - Administrative, Administrative_Duration, Informational, Informational_Duration, ProductRelated, ProductRelated_Duration, BounceRates, dan PageValues.
 - Sementara, pada kolom ‘ExitRates’ distribusi data menumpuk di antara 0.00 - 0.05.
@@ -107,7 +107,7 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
 </p>
 <br>
 
-#### Insight : 
+### Insight : 
 -Deteksi kemungkinan moderate redundant features (nilai korelasi tinggi >= 0.6).
 1. ‘Administrative’ dan ‘Administrative_Duration’
 2. ‘Informational’ dan ‘Informational_Duration’
@@ -128,7 +128,7 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
 </p>
 <br>
 
-#### Insight : <br>
+### Insight : <br>
 - Korelasi yang cukup kuat antar kolom: <br>
 1. ‘VisitorType’ dan ‘OperatingSystems’ 
 2. ‘VisitorType’ dan ‘Browser’
@@ -162,7 +162,7 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
   Gambar 6 – Month Vs Revenue
 </p>
 <br>
-#### Insight <br>
+### Insight <br>
 1. Bulan November memiliki jumlah revenue tertinggi (803) di antara semua bulan.
 2. Bulan-bulan dengan jumlah revenue yang signifikan tinggi lainnya adalah Mei (379) dan Maret (201).
 3. Februari memiliki jumlah revenue yang paling rendah (3), menunjukkan bahwa ini adalah bulan dengan performa paling rendah dalam hal pendapatan.
@@ -175,7 +175,7 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
   Gambar 7 – Visitor per Region Vs Revenue
 </p>
 <br>
-#### Insight <br>
+### Insight <br>
 1. Wilayah 2 memiliki persentase pendapatan tertinggi (16.64%), diikuti oleh Wilayah 9 (16.54%), dan Wilayah 5 (16.32%).
 <br>
 
@@ -186,7 +186,7 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
   Gambar 8 – Weekend Vs Revenue
 </p>
 <br>
-#### Insight <br>
+### Insight <br>
 1. Persentase pengunjung yang menghasilkan pendapatan lebih tinggi pada akhir pekan (17.50%) dibandingkan dengan hari biasa (14.91%).
 2. Grafik menunjukkan meskipun jumlah pengunjung lebih rendah pada akhir pekan, potensi pengunjung melakukan transaksi lebih besar dibandingkan hari biasa.
 <br>
@@ -198,7 +198,7 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
   Gambar 9 – Product Related, Administrative, Informational Vs Revenue
 </p>
 <br>
-#### Insight <br>
+### Insight <br>
 1. Interaksi pengunjung dengan halaman terkait produk (Product Related) merupakan faktor paling penting dalam mendorong pembelian.
 <br>
 
