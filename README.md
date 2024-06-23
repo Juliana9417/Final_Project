@@ -42,6 +42,7 @@
 ![DataDeskritiveNumerik](https://github.com/Juliana9417/Final_Project/assets/172182011/8ad6a165-887d-40c2-acbe-42c5c2f50042)
 
 <br>
+
 <p align="center">
    Tabel 3  – Data Deskriptive Kategori
 </p> 
