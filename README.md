@@ -71,7 +71,9 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
 
 ### Univariate Analisis : 
 <p align="center">
-  <kbd><img src="DisplotNumerikal" width=650px> </kbd> <br>
+  
+![DisplotNumerikal](https://github.com/Juliana9417/Final_Project/assets/172182011/406d8ad1-c3f7-4946-9328-dd0ea767e99e)
+
   Gambar 1 – Displot Numerikal 
 </p>
 <br>
