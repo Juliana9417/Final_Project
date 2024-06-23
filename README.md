@@ -29,7 +29,6 @@
 ### Dataset
 <p align="center">
   Tabel 1 – Informasi Data <br>
-  <kbd><img src="InformasiData.png" width=650px> </kbd> <br>
 </p>
 
 ![InformasiData](https://github.com/Juliana9417/Final_Project/assets/172182011/ac551e0f-ec91-4a4a-b7f9-7ae2e1e75501)
@@ -37,14 +36,18 @@
 ### Descriptive Statistics
 
 <p align="center">
-  <kbd><img src="DataDeskritiveNumerik.png" width=650px> </kbd> <br>
-  Tabel 2  – Data Deskriptive Numerikal
+  Tabel 2  – Data Deskriptif Numerikal
 </p>
+
+![DataDeskritiveNumerik](https://github.com/Juliana9417/Final_Project/assets/172182011/8ad6a165-887d-40c2-acbe-42c5c2f50042)
+
 <br>
 <p align="center">
-  <kbd><img src="DataDeskritiveKategori.png"width=650px> </kbd> <br>
    Tabel 3  – Data Deskriptive Kategori
 </p> 
+
+![DataDeskritiveKategori](https://github.com/Juliana9417/Final_Project/assets/172182011/be4758d7-f873-4a03-a39d-08743f801e8f)
+
 <br>
 
 ### Insight Data Deskriptif : 
