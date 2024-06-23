@@ -31,7 +31,9 @@
   Tabel 1 – Informasi Data <br>
 </p>
 
-![InformasiData](https://github.com/Juliana9417/Final_Project/assets/172182011/ac551e0f-ec91-4a4a-b7f9-7ae2e1e75501)
+<p align="center">
+  <img src="https://github.com/Juliana9417/Final_Project/assets/172182011/ac551e0f-ec91-4a4a-b7f9-7ae2e1e75501" alt="InformasiData">
+</p>
 
 ### Descriptive Statistics
 
@@ -39,7 +41,9 @@
   Tabel 2  – Data Deskriptif Numerikal
 </p>
 
-![DataDeskritiveNumerik](https://github.com/Juliana9417/Final_Project/assets/172182011/8ad6a165-887d-40c2-acbe-42c5c2f50042)
+<p align="center">
+  <img src="https://github.com/Juliana9417/Final_Project/assets/172182011/8ad6a165-887d-40c2-acbe-42c5c2f50042" alt="DataDeskritiveNumerik">
+</p>
 
 <br>
 
@@ -47,7 +51,9 @@
    Tabel 3  – Data Deskriptive Kategori
 </p> 
 
-![DataDeskritiveKategori](https://github.com/Juliana9417/Final_Project/assets/172182011/be4758d7-f873-4a03-a39d-08743f801e8f)
+<p align="center">
+  <img src="https://github.com/Juliana9417/Final_Project/assets/172182011/be4758d7-f873-4a03-a39d-08743f801e8f" alt="DataDeskritiveKategori">
+</p>
 
 <br>
 
