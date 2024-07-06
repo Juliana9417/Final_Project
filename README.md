@@ -267,7 +267,7 @@ langsung di-drop karena data tersebut kemungkinan mewakili populasi tertentu.
   - Label encoding untuk fetaure 'Month', 'Revenue', dan 'Weekend'
   - One-hot encoding untuk feature 'VisitorType', kemudian VisitorType_isOther hasil one hot dihapus untuk menghindari multikolinearitas pada modelling.
   - Untuk features : Browser, Region, TrafficType dan SpecialDay tidak dilakukan feature encoding (label encoder/one hot) diasumsikan feature tersebut sudah bernilai ordinal.
-
+<br>
 
 ## **Feature Engineering**
 
@@ -295,7 +295,7 @@ langsung di-drop karena data tersebut kemungkinan mewakili populasi tertentu.
   - **Alasan Memilih Fitur:** Durasi rata-rata per halaman memberi gambaran tentang intensitas interaksi pengguna dengan konten di setiap halaman. Pengguna yang menghabiskan waktu lebih lama di setiap halaman mungkin lebih tertarik dan cenderung untuk konversi. Meningkatkan kemampuan model prediksi mengidentifikasi pengguna berpotensi tinggi untuk konversi.
 <br>
 
-3. Feature tambahan (selain dari dataset) :
+2. Feature tambahan (selain dari dataset) :
     - Waktu Kunjungan Terakhir (Time Since Last Visit)
       Definisi: Selang waktu antara kunjungan terakhir pengguna dan kunjungan saat ini. <br>
       Alasan: Pengguna yang baru saja mengunjungi situs web mungkin lebih cenderung untuk melakukan konversi karena situs tersebut masih segar dalam ingatan mereka.
