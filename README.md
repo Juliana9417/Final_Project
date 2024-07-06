@@ -281,15 +281,19 @@ langsung di-drop karena data tersebut kemungkinan mewakili populasi tertentu.
      Gambar 13 - Feature Engineering <br>
    </p>
 <br>
-      - Session_Duration:
-         Definisi: Total waktu yang dihabiskan pengguna untuk berinteraksi dengan berbagai halaman selama satu sesi.<br>
-            Alasan Memilih Fitur: Durasi sesi yang lebih lama dapat menunjukkan pengguna yang lebih tertarik dan terlibat, yang seringkali berpotensi lebih tinggi untuk konversi. Fitur ini penting untuk meningkatkan akurasi model prediksi konversi pengunjung web.
-      - Page_Count:
-            Definisi: Total jumlah halaman (Administratif, Informasional, ProductRelated) yang diakses pengguna selama satu sesi.<br>
-            Alasan Memilih Fitur: Jumlah halaman yang tinggi menunjukkan eksplorasi yang lebih mendalam terhadap situs, yang bisa menjadi indikator kuat dari minat dan niat untuk konversi. Fitur ini membantu model prediksi dalam mengidentifikasi perilaku pengguna yang lebih cenderung melakukan konversi.
-      - Avg_Duration_Per_Page:
-            Definisi: Rata-rata waktu yang dihabiskan pada setiap halaman selama satu sesi.<br>
-            Alasan Memilih Fitur*: Durasi rata-rata per halaman memberikan gambaran tentang seberapa intens pengguna berinteraksi dengan konten di setiap halaman. Pengguna yang menghabiskan lebih banyak waktu pada setiap halaman mungkin lebih tertarik dan lebih mungkin untuk melakukan konversi. Fitur ini meningkatkan kemampuan model prediksi dalam mengidentifikasi pengguna yang berpotensi tinggi untuk konversi<br>
+
+- **Session_Duration**
+  - **Definisi:** Total waktu yang dihabiskan pengguna untuk berinteraksi dengan halaman-halaman selama satu sesi.
+  - **Alasan Memilih Fitur:** Durasi sesi yang lebih lama bisa menunjukkan minat dan keterlibatan tinggi, berpotensi untuk konversi. Penting untuk meningkatkan prediksi konversi pengunjung web.
+
+- **Page_Count**
+  - **Definisi:** Jumlah total halaman (Administratif, Informasional, ProductRelated) yang diakses pengguna selama satu sesi.
+  - **Alasan Memilih Fitur:** Jumlah halaman yang banyak menunjukkan eksplorasi mendalam terhadap situs, bisa menjadi indikator kuat minat dan niat untuk konversi. Membantu model prediksi mengenali perilaku pengguna yang cenderung melakukan konversi.
+
+- **Avg_Duration_Per_Page**
+  - **Definisi:** Rata-rata waktu yang dihabiskan pada setiap halaman selama satu sesi.
+  - **Alasan Memilih Fitur:** Durasi rata-rata per halaman memberi gambaran tentang intensitas interaksi pengguna dengan konten di setiap halaman. Pengguna yang menghabiskan waktu lebih lama di setiap halaman mungkin lebih tertarik dan cenderung untuk konversi. Meningkatkan kemampuan model prediksi mengidentifikasi pengguna berpotensi tinggi untuk konversi.
+<br>
 
 3. Feature tambahan (selain dari dataset) :
     - Waktu Kunjungan Terakhir (Time Since Last Visit)
