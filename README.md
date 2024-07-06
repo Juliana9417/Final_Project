@@ -223,3 +223,133 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
 6. Region 1, 3, dan 2 memiliki jumlah total dan jumlah pendapatan tertinggi. Alokasikan lebih banyak sumber daya seperti kampanye pemasaran, promosi yang dipersonalisasi, dan dukungan pelanggan ke region tersebut untuk memanfaatkan potensi pendapatan yang lebih tinggi.
 
 7. Traffic type 2 memiliki jumlah pengunjung terbanyak tetapi konversinya rendah. erlu mengalokasikan sumberdaya untuk meningkatkan konversi salah satu contohnya seperti promosi/diskon.
+
+
+## **Data Pre-Processing**
+1. Missing Value
+    Drop semua missing values dengan .dropna()
+   
+   <p align="center">
+     <img src="https://github.com/annidakhoirunnisa/preprocessing_images/blob/main/drop_missing_values.png">
+   </p>
+   <p align="center">
+     Gambar 10 - Handling missing values <br>
+   </p>
+<br>
+<br>
+2. Duplicated Data
+    Drop semua data duplikat dengan .drop_duplicates()
+       
+   <p align="center">
+     <img src="https://github.com/annidakhoirunnisa/preprocessing_images/blob/main/drop_duplicates.png">
+   </p>
+   <p align="center">
+     Gambar 11 - Handling duplikat <br>
+   </p>
+<br>
+<br>
+4. Handling Outliers
+    TIdak dilakukan handling outlier karena cukup banyak kehilangan data dari outliers handling menggunakan z-score dan IQR, hal ini kemungkinan karena banyak data yang 0. Outliers tidak bisa
+langsung di-drop karena data tersebut kemungkinan mewakili populasi tertentu.
+
+5. Feature Transformation
+    Transformasi data akan dilakukan setelah pemilihan fitur dan pemisahan data menggunakan standarisasi agar model lebih robust terhadap outliers.
+
+6. Feature Encoding
+      
+   <p align="center">
+     <img src="https://github.com/annidakhoirunnisa/preprocessing_images/blob/main/encoding.png">
+   </p>
+   <p align="center">
+     Gambar 12 - Feature Encoding <br>
+   </p>
+<br>
+  - Label encoding untuk fetaure 'Month', 'Revenue', dan 'Weekend'
+  - One-hot encoding untuk feature 'VisitorType', kemudian VisitorType_isOther hasil one hot dihapus untuk menghindari multikolinearitas pada modelling.
+  - Untuk features : Browser, Region, TrafficType dan SpecialDay tidak dilakukan feature encoding (label encoder/one hot) diasumsikan feature tersebut sudah bernilai ordinal.
+
+
+## **Feature Engineering**
+
+1. Feature Extraction<br>
+   A. Feature Tambahan untuk modelling
+    
+   <p align="center">
+     <img src="https://github.com/annidakhoirunnisa/preprocessing_images/blob/main/feature_extraction.png">
+   </p>
+   <p align="center">
+     Gambar 13 - Feature Engineering <br>
+   </p>
+<br>
+      - Session_Duration:
+         Definisi: Total waktu yang dihabiskan pengguna untuk berinteraksi dengan berbagai halaman selama satu sesi.<br>
+            Alasan Memilih Fitur: Durasi sesi yang lebih lama dapat menunjukkan pengguna yang lebih tertarik dan terlibat, yang seringkali berpotensi lebih tinggi untuk konversi. Fitur ini penting untuk meningkatkan akurasi model prediksi konversi pengunjung web.
+      - Page_Count:
+            Definisi: Total jumlah halaman (Administratif, Informasional, ProductRelated) yang diakses pengguna selama satu sesi.<br>
+            Alasan Memilih Fitur: Jumlah halaman yang tinggi menunjukkan eksplorasi yang lebih mendalam terhadap situs, yang bisa menjadi indikator kuat dari minat dan niat untuk konversi. Fitur ini membantu model prediksi dalam mengidentifikasi perilaku pengguna yang lebih cenderung melakukan konversi.
+      - Avg_Duration_Per_Page:
+            Definisi: Rata-rata waktu yang dihabiskan pada setiap halaman selama satu sesi.<br>
+            Alasan Memilih Fitur*: Durasi rata-rata per halaman memberikan gambaran tentang seberapa intens pengguna berinteraksi dengan konten di setiap halaman. Pengguna yang menghabiskan lebih banyak waktu pada setiap halaman mungkin lebih tertarik dan lebih mungkin untuk melakukan konversi. Fitur ini meningkatkan kemampuan model prediksi dalam mengidentifikasi pengguna yang berpotensi tinggi untuk konversi<br>
+
+3. Feature tambahan (selain dari dataset) :
+    - Waktu Kunjungan Terakhir (Time Since Last Visit)
+      Definisi: Selang waktu antara kunjungan terakhir pengguna dan kunjungan saat ini. <br>
+      Alasan: Pengguna yang baru saja mengunjungi situs web mungkin lebih cenderung untuk melakukan konversi karena situs tersebut masih segar dalam ingatan mereka.
+   - Rata-rata Nilai Transaksi Sebelumnya (Average Previous Transaction Value)
+     Definisi: Rata-rata nilai transaksi dari kunjungan sebelumnya untuk pengguna yang telah melakukan pembelian sebelumnya. <br>
+     Alasan: Pengguna yang memiliki riwayat transaksi dengan nilai tinggi mungkin memiliki probabilitas konversi yang lebih tinggi, serta cenderung melakukan pembelian dengan nilai yang lebih tinggi di masa depan.
+   - Jumlah Item dalam Keranjang (Number of Items in Cart)
+     Definisi: Jumlah item yang ditambahkan ke keranjang belanja oleh pengguna selama sesi saat ini.<br>
+     Alasan: Pengguna yang menambahkan banyak item ke keranjang belanja mungkin menunjukkan niat yang lebih tinggi untuk melakukan pembelian.
+   - Metode Pembayaran yang Disukai (Preferred Payment Method)
+     Definisi: Metode pembayaran yang paling sering digunakan oleh pengguna (misalnya, kartu kredit, PayPal, dll).<br>
+     Alasan: Pengguna dengan metode pembayaran yang jelas mungkin lebih cenderung untuk melakukan konversi karena mereka merasa nyaman dengan proses pembayaran.
+   - Tanggal Sesi (Session Date)
+     Definisi: Tanggal di mana sesi pengguna terjadi.<br>
+     Alasan: Tanggal yang bertepatan dengan periode setelah penerimaan gaji dapat meningkatkan kemungkinan konversi, karena pengguna cenderung memiliki ketersediaan dana yang lebih tinggi untuk melakukan pembelian.<br>
+  
+  
+## **Feature Selection**
+  1. Fitur kategorikal - target
+     
+   <p align="center">
+     <img src="https://github.com/annidakhoirunnisa/preprocessing_images/blob/main/chi2_test.png">
+   </p>
+   <p align="center">
+     Gambar 14 - Chi2 Test <br>
+   </p>
+   
+<br>
+Berdasarkan Uji Chi-square dipilih feature yang memiliki nilai korelasi tertinggi yaitu : Month_encoded, VisitorType_isNew_Visitor, SpecialDay, VisitorType_isReturning_Visitor, Browser, Weekend. <br> 
+
+  2. Fitur numerikal - target
+    
+   <p align="center">
+     <img src="https://github.com/annidakhoirunnisa/preprocessing_images/blob/main/annova_test.png">
+   </p>
+   <p align="center">
+     Gambar 15 - Annova Test <br>
+   </p>
+   
+<br>
+Berdasarkan Uji Annova dipilih feature yang memiliki nilai korelasi tertinggi yaitu :  PageValues, ExitRates, Page_Count, ProductRelated, Session_Duration.<br> 
+
+## **Class Imbalance**
+    
+   <p align="center">
+     <img src="https://github.com/annidakhoirunnisa/preprocessing_images/blob/main/class_imbalance.png">
+   </p>
+   <p align="center">
+     Gambar 16 - Class Imbalance <br>
+   </p>
+<br>
+    
+   <p align="center">
+     <img src="https://github.com/annidakhoirunnisa/preprocessing_images/blob/main/sampling.png">
+   </p>
+   <p align="center">
+     Gambar 17 - Sampling Methods <br>
+   </p>
+<br>
+    SMOTE adalah pilihan yang tepat dalam klasifikasi model dengan ketidakseimbangan kelas yang signifikan, seperti pada dataset ini. Dengan menciptakan sampel sintetis dari kelas minoritas, SMOTE secara efektif meningkatkan representasi data minoritas dalam dataset, yang memungkinkan model untuk belajar pola yang lebih baik dari kelas minoritas. Ini tidak hanya mengurangi risiko overfitting dengan memperluas variasi data minoritas, tetapi juga meningkatkan akurasi prediksi pada kelas minoritas.
+
