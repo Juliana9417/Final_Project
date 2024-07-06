@@ -223,9 +223,10 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
 6. Region 1, 3, dan 2 memiliki jumlah total dan jumlah pendapatan tertinggi. Alokasikan lebih banyak sumber daya seperti kampanye pemasaran, promosi yang dipersonalisasi, dan dukungan pelanggan ke region tersebut untuk memanfaatkan potensi pendapatan yang lebih tinggi.
 
 7. Traffic type 2 memiliki jumlah pengunjung terbanyak tetapi konversinya rendah. erlu mengalokasikan sumberdaya untuk meningkatkan konversi salah satu contohnya seperti promosi/diskon.
-
+<br>
 
 ## **Data Pre-Processing**
+<br>
 1. Missing Value
     Drop semua missing values dengan .dropna()
    
@@ -249,12 +250,14 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
 <br>
 <br>
 4. Handling Outliers
-    TIdak dilakukan handling outlier karena cukup banyak kehilangan data dari outliers handling menggunakan z-score dan IQR, hal ini kemungkinan karena banyak data yang 0. Outliers tidak bisa
+    Tidak dilakukan handling outlier karena cukup banyak kehilangan data dari outliers handling menggunakan z-score dan IQR, hal ini kemungkinan karena banyak data yang 0. Outliers tidak bisa
 langsung di-drop karena data tersebut kemungkinan mewakili populasi tertentu.
-
+<br>
+<br>
 5. Feature Transformation
     Transformasi data akan dilakukan setelah pemilihan fitur dan pemisahan data menggunakan standarisasi agar model lebih robust terhadap outliers.
-
+<br>
+<br>
 6. Feature Encoding
       
    <p align="center">
@@ -264,10 +267,10 @@ langsung di-drop karena data tersebut kemungkinan mewakili populasi tertentu.
      Gambar 12 - Feature Encoding <br>
    </p>
 <br>
-  - Label encoding untuk fetaure 'Month', 'Revenue', dan 'Weekend'
-  - One-hot encoding untuk feature 'VisitorType', kemudian VisitorType_isOther hasil one hot dihapus untuk menghindari multikolinearitas pada modelling.
-  - Untuk features : Browser, Region, TrafficType dan SpecialDay tidak dilakukan feature encoding (label encoder/one hot) diasumsikan feature tersebut sudah bernilai ordinal.
-<br>
+  - Label encoding untuk fetaure 'Month', 'Revenue', dan 'Weekend' <br>
+  - One-hot encoding untuk feature 'VisitorType', kemudian VisitorType_isOther hasil one hot dihapus untuk menghindari multikolinearitas pada modelling.<br>
+  - Untuk features : Browser, Region, TrafficType dan SpecialDay tidak dilakukan feature encoding (label encoder/one hot) diasumsikan feature tersebut sudah bernilai ordinal.<br>
+
 
 ## **Feature Engineering**
 
@@ -325,6 +328,7 @@ langsung di-drop karena data tersebut kemungkinan mewakili populasi tertentu.
    
 <br>
 Berdasarkan Uji Chi-square dipilih feature yang memiliki nilai korelasi tertinggi yaitu : Month_encoded, VisitorType_isNew_Visitor, SpecialDay, VisitorType_isReturning_Visitor, Browser, Weekend. <br> 
+<br>
 
   2. Fitur numerikal - target
     
