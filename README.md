@@ -225,7 +225,7 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
 7. Traffic type 2 memiliki jumlah pengunjung terbanyak tetapi konversinya rendah. erlu mengalokasikan sumberdaya untuk meningkatkan konversi salah satu contohnya seperti promosi/diskon.
 <br>
 
-## **Data Pre-Processing**
+## 📂 **Stage 2 : Data Pre-Processing**
 <br>
 1. Missing Value
     Drop semua missing values dengan .dropna()
@@ -361,3 +361,18 @@ Berdasarkan Uji Annova dipilih feature yang memiliki nilai korelasi tertinggi ya
 <br>
     SMOTE adalah pilihan yang tepat dalam klasifikasi model dengan ketidakseimbangan kelas yang signifikan, seperti pada dataset ini. Dengan menciptakan sampel sintetis dari kelas minoritas, SMOTE secara efektif meningkatkan representasi data minoritas dalam dataset, yang memungkinkan model untuk belajar pola yang lebih baik dari kelas minoritas. Ini tidak hanya mengurangi risiko overfitting dengan memperluas variasi data minoritas, tetapi juga meningkatkan akurasi prediksi pada kelas minoritas.
 
+## 📂 **Stage 3 : Modelling**
+Setelah uji coba beberapa algoritma model klasifikasi mechine learning (Supervised Learning) yaitu Logistic Regression, Decission Tree, Random Forest, AdaBoost, dan XGBoost. Model algoritma **Logistic Regression** dengan Hyperparameter Tuning, memiliki performa paling baik. Recall (cross validation) digunakan sebagai matrix evaluasi dalam membandingkan performa antar algoritma model. <br>
+
+## **Logistic Regression : Modeling and Evaluation**
+
+Recall cross-validation merupakan proses mengukur recall (sensitivitas atau true positive rate) dari sebuah model machine learning dengan teknik cross-validation. Menurut Powers, recall merupakan metrik evaluasi yang penting, terutama dalam kasus di mana deteksi positif benar (true positives) lebih kritis dibandingkan dengan deteksi negatif salah (false negatives). Powers juga menjelaskan bahwa kesalahan tipe II (false negatives) memiliki konsekuensi yang lebih serius dibandingkan dengan kesalahan tipe I (false positives). Misalnya, dalam dataset ini dimana perusahaan tidak ingin kehilangan peluang dari pelanggan yang memiliki behavior yang berpotensi mememberikan revenue kepada perusahaan. <br>
+
+Gambar 1 – Hasil Evaluasi Matriks Logistic Regression dengan Hyperparameter Tuning  <br>
+
+<br>
+
+---
+
+#### Sumber
+Powers, D. M., 2011. Evaluation: From Precision, Recall and F-Measure to ROC, Informedness, Markedness & Correlation. [online] Available at: https://doi.org/10.48550/arXiv.2010.16061 [Accessed 16 July 2024].
