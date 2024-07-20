@@ -255,7 +255,7 @@ langsung di-drop karena data tersebut kemungkinan mewakili populasi tertentu.
 <br>
 <br>
 5. Feature Transformation
-    Transformasi data akan dilakukan setelah pemilihan fitur dan pemisahan data menggunakan standarisasi agar model lebih robust terhadap outliers.
+    Transformasi data dilakukan setelah pemilihan fitur dan pemisahan data menggunakan robust scaller agar model lebih robust terhadap outliers.
 <br>
 <br>
 6. Feature Encoding
@@ -272,7 +272,7 @@ langsung di-drop karena data tersebut kemungkinan mewakili populasi tertentu.
   - Untuk features : Browser, Region, TrafficType dan SpecialDay tidak dilakukan feature encoding (label encoder/one hot) diasumsikan feature tersebut sudah bernilai ordinal.<br>
 
 
-## **Feature Engineering**
+### **Feature Engineering**
 
 1. Feature Extraction<br>
    A. Feature Tambahan untuk modelling
@@ -316,7 +316,7 @@ langsung di-drop karena data tersebut kemungkinan mewakili populasi tertentu.
      Alasan: Tanggal yang bertepatan dengan periode setelah penerimaan gaji dapat meningkatkan kemungkinan konversi, karena pengguna cenderung memiliki ketersediaan dana yang lebih tinggi untuk melakukan pembelian.<br>
   
   
-## **Feature Selection**
+### **Feature Selection**
   1. Fitur kategorikal - target
      
    <p align="center">
@@ -327,7 +327,7 @@ langsung di-drop karena data tersebut kemungkinan mewakili populasi tertentu.
    </p>
    
 <br>
-Berdasarkan Uji Chi-square dipilih feature yang memiliki nilai korelasi tertinggi yaitu : Month_encoded, VisitorType_isNew_Visitor, SpecialDay, VisitorType_isReturning_Visitor, Browser, Weekend. <br> 
+Berdasarkan Uji Chi-square dipilih 3 feature yang memiliki nilai korelasi tertinggi yaitu : Month_encoded, VisitorType_isNew_Visitor, SpecialDay <br> 
 <br>
 
   2. Fitur numerikal - target
@@ -340,9 +340,12 @@ Berdasarkan Uji Chi-square dipilih feature yang memiliki nilai korelasi tertingg
    </p>
    
 <br>
-Berdasarkan Uji Annova dipilih feature yang memiliki nilai korelasi tertinggi yaitu :  PageValues, ExitRates, Page_Count, ProductRelated, Session_Duration.<br> 
+Berdasarkan Uji Annova dipilih 3 feature yang memiliki nilai korelasi tertinggi yaitu :  PageValues, ExitRates, Page_Count.<br> 
 
-## **Class Imbalance**
+### **Splitting Data Train dan Test**
+Pemisahan dataset train dan test dengan proporsi **70 : 30**.
+
+### **Handling Class Imbalance**
     
    <p align="center">
      <img src="https://github.com/annidakhoirunnisa/preprocessing_images/blob/main/class_imbalance.png">
@@ -362,17 +365,28 @@ Berdasarkan Uji Annova dipilih feature yang memiliki nilai korelasi tertinggi ya
     SMOTE adalah pilihan yang tepat dalam klasifikasi model dengan ketidakseimbangan kelas yang signifikan, seperti pada dataset ini. Dengan menciptakan sampel sintetis dari kelas minoritas, SMOTE secara efektif meningkatkan representasi data minoritas dalam dataset, yang memungkinkan model untuk belajar pola yang lebih baik dari kelas minoritas. Ini tidak hanya mengurangi risiko overfitting dengan memperluas variasi data minoritas, tetapi juga meningkatkan akurasi prediksi pada kelas minoritas.
 
 ## 📂 **Stage 3 : Modelling**
+
 Setelah uji coba beberapa algoritma model klasifikasi mechine learning (Supervised Learning) yaitu Logistic Regression, Decission Tree, Random Forest, AdaBoost, dan XGBoost. Model algoritma **Logistic Regression** dengan Hyperparameter Tuning, memiliki performa paling baik. Recall (cross validation) digunakan sebagai matrix evaluasi dalam membandingkan performa antar algoritma model. <br>
 
-## **Logistic Regression : Modeling and Evaluation**
+### **Logistic Regression : Modeling and Evaluation**
 
-Recall cross-validation merupakan proses mengukur recall (sensitivitas atau true positive rate) dari sebuah model machine learning dengan teknik cross-validation. Menurut Powers, recall merupakan metrik evaluasi yang penting, terutama dalam kasus di mana deteksi positif benar (true positives) lebih kritis dibandingkan dengan deteksi negatif salah (false negatives). Powers juga menjelaskan bahwa kesalahan tipe II (false negatives) memiliki konsekuensi yang lebih serius dibandingkan dengan kesalahan tipe I (false positives). Misalnya, dalam dataset ini dimana perusahaan tidak ingin kehilangan peluang dari pelanggan yang memiliki behavior yang berpotensi mememberikan revenue kepada perusahaan. <br>
+Menurut Powers, recall merupakan metrik evaluasi yang penting, terutama dalam kasus di mana deteksi positif benar (true positives) lebih kritis dibandingkan dengan deteksi negatif salah (false negatives). Powers juga menjelaskan bahwa kesalahan tipe II (false negatives) memiliki konsekuensi yang lebih serius dibandingkan dengan kesalahan tipe I (false positives). Misalnya, dalam dataset ini dimana perusahaan tidak ingin kehilangan peluang dari pelanggan yang memiliki behavior yang berpotensi mememberikan revenue kepada perusahaan. <br>
 
-Gambar 1 – Hasil Evaluasi Matriks Logistic Regression dengan Hyperparameter Tuning  <br>
+Recall cross-validation merupakan proses mengukur recall (sensitivitas atau true positive rate) dari sebuah model machine learning dengan teknik cross-validation. Recall dievaluasi menggunakan cross-validation untuk memastikan bahwa model tidak hanya dioptimalkan untuk dataset tertentu, tetapi memiliki generalisasi yang baik pada data yang tidak terlihat. Proses ini membantu untuk mendapatkan estimasi yang lebih akurat dari performa model pada data baru (Caruana & Niculescu-Mizil, 2006). <br>
+
+
+<p align="center">
+  Gambar 18 – Hasil Evaluasi Matriks Logistic Regression dengan Hyperparameter Tuning  <br>
+
+<p align="center">
+  Gambar 19 – Confussion Matrix Logistic Regression dengan Hyperparameter Tuning <br>
+
+### **Logistic Regression : Feature Importances**
 
 <br>
 
 ---
 
 #### Sumber
+Caruana, R. & Niculescu-Mizil, A., 2006. An empirical comparison of supervised learning algorithms. Proceedings of the 23rd International Conference on Machine Learning, pp.161-168. doi: 10.1145/1143844.1143865.
 Powers, D. M., 2011. Evaluation: From Precision, Recall and F-Measure to ROC, Informedness, Markedness & Correlation. [online] Available at: https://doi.org/10.48550/arXiv.2010.16061 [Accessed 16 July 2024].
