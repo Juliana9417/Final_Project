@@ -387,6 +387,9 @@ Langkah berikutnya dilakukan pengukuran pengaruh fitur terhadap model berdasarka
 <p align="center">
   Gambar 20 – Rank features by the absolute value of their coefficients <br>
 
+**Business Insight :**
+<br>
+**Rekomendasi Bisnis :**
 <br>
 
 ---
