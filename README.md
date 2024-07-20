@@ -369,21 +369,32 @@ Pemisahan dataset train dan test dengan proporsi **70 : 30**.
 Setelah uji coba beberapa algoritma model klasifikasi mechine learning (Supervised Learning) yaitu Logistic Regression, Decission Tree, Random Forest, AdaBoost, dan XGBoost. Model algoritma **Logistic Regression** dengan Hyperparameter Tuning, memiliki performa paling baik. Recall (cross validation) digunakan sebagai matrix evaluasi dalam membandingkan performa antar algoritma model. <br>
 
 ### **Logistic Regression : Modeling and Evaluation**
+Recall cross-validation merupakan proses mengukur recall (sensitivitas atau true positive rate) dari sebuah model machine learning dengan teknik cross-validation. Recall dievaluasi menggunakan cross-validation untuk memastikan bahwa model tidak hanya dioptimalkan untuk dataset tertentu, tetapi memiliki generalisasi yang baik pada data baru lainnya (Caruana & Niculescu-Mizil, 2006). <br>
 
-Menurut Powers, recall merupakan metrik evaluasi yang penting, terutama dalam kasus di mana deteksi positif benar (true positives) lebih kritis dibandingkan dengan deteksi negatif salah (false negatives). Powers juga menjelaskan bahwa kesalahan tipe II (false negatives) memiliki konsekuensi yang lebih serius dibandingkan dengan kesalahan tipe I (false positives). Misalnya, dalam dataset ini dimana perusahaan tidak ingin kehilangan peluang dari pelanggan yang memiliki behavior yang berpotensi memberikan revenue kepada perusahaan. <br>
+Menurut Powers, recall merupakan metrik evaluasi yang penting, terutama dalam kasus di mana deteksi positif benar (**true positives**) lebih kritis dibandingkan dengan deteksi negatif salah (false negatives). Powers juga menjelaskan bahwa kesalahan tipe II (**false negatives**) memiliki konsekuensi yang lebih serius dibandingkan dengan kesalahan tipe I (false positives). <br>
 
-Recall cross-validation merupakan proses mengukur recall (sensitivitas atau true positive rate) dari sebuah model machine learning dengan teknik cross-validation. Recall dievaluasi menggunakan cross-validation untuk memastikan bahwa model tidak hanya dioptimalkan untuk dataset tertentu, tetapi memiliki generalisasi yang baik pada data baru lainnya. Proses ini membantu untuk mendapatkan estimasi yang lebih akurat dari performa model pada data baru (Caruana & Niculescu-Mizil, 2006). <br>
+Seperti kasus dalam dataset ini dimana perusahaan tidak ingin kehilangan peluang dari pelanggan yang memiliki behavior yang berpotensi memberikan revenue kepada perusahaan. Maka dari itu, model dengan nilai recall mendekati 1 menunjukkan performa yang lebih baik dalam mendeteksi semua kejadian positif. <br>
 
-
+Berikut hasil evaluasi dari prediksi model Logistic Regression setelah dilakukan Hyperparameter Tuning.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/637a0ed5-5f1a-40bf-bf42-37825c5120b7">
+   </p>
 <p align="center">
   Gambar 18 – Hasil Evaluasi Matriks Logistic Regression dengan Hyperparameter Tuning  <br>
 
+Nilai Recall (cross-validation) dari model Logistic Regression dengan Hyperparameter Tuning pada train sekitar 0.83 dan test 0.81 yang berarti model memiliki performa yang sudah cukup baik.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/58c460d5-4508-4ca4-b57d-2fdf50db6a74">
+   </p>  
 <p align="center">
   Gambar 19 – Confussion Matrix Logistic Regression dengan Hyperparameter Tuning <br>
 
 ### **Logistic Regression : Feature Importances**
 Langkah berikutnya dilakukan pengukuran pengaruh fitur terhadap model berdasarkan nilai absolut dari koefisien fitur dalam model. Dengan kata lain, fitur dengan koefisien yang lebih besar (baik positif maupun negatif) dianggap lebih penting, karena perubahan dalam fitur tersebut akan berdampak lebih signifikan terhadap output model. <br>
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/74215172-197f-4ea0-8dec-b71d19da99a1">
+   </p>  
 <p align="center">
   Gambar 20 – Rank features by the absolute value of their coefficients <br>
 
