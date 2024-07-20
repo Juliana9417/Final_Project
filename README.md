@@ -370,9 +370,9 @@ Setelah uji coba beberapa algoritma model klasifikasi mechine learning (Supervis
 
 ### **Logistic Regression : Modeling and Evaluation**
 
-Menurut Powers, recall merupakan metrik evaluasi yang penting, terutama dalam kasus di mana deteksi positif benar (true positives) lebih kritis dibandingkan dengan deteksi negatif salah (false negatives). Powers juga menjelaskan bahwa kesalahan tipe II (false negatives) memiliki konsekuensi yang lebih serius dibandingkan dengan kesalahan tipe I (false positives). Misalnya, dalam dataset ini dimana perusahaan tidak ingin kehilangan peluang dari pelanggan yang memiliki behavior yang berpotensi mememberikan revenue kepada perusahaan. <br>
+Menurut Powers, recall merupakan metrik evaluasi yang penting, terutama dalam kasus di mana deteksi positif benar (true positives) lebih kritis dibandingkan dengan deteksi negatif salah (false negatives). Powers juga menjelaskan bahwa kesalahan tipe II (false negatives) memiliki konsekuensi yang lebih serius dibandingkan dengan kesalahan tipe I (false positives). Misalnya, dalam dataset ini dimana perusahaan tidak ingin kehilangan peluang dari pelanggan yang memiliki behavior yang berpotensi memberikan revenue kepada perusahaan. <br>
 
-Recall cross-validation merupakan proses mengukur recall (sensitivitas atau true positive rate) dari sebuah model machine learning dengan teknik cross-validation. Recall dievaluasi menggunakan cross-validation untuk memastikan bahwa model tidak hanya dioptimalkan untuk dataset tertentu, tetapi memiliki generalisasi yang baik pada data yang tidak terlihat. Proses ini membantu untuk mendapatkan estimasi yang lebih akurat dari performa model pada data baru (Caruana & Niculescu-Mizil, 2006). <br>
+Recall cross-validation merupakan proses mengukur recall (sensitivitas atau true positive rate) dari sebuah model machine learning dengan teknik cross-validation. Recall dievaluasi menggunakan cross-validation untuk memastikan bahwa model tidak hanya dioptimalkan untuk dataset tertentu, tetapi memiliki generalisasi yang baik pada data baru lainnya. Proses ini membantu untuk mendapatkan estimasi yang lebih akurat dari performa model pada data baru (Caruana & Niculescu-Mizil, 2006). <br>
 
 
 <p align="center">
