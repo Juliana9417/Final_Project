@@ -382,6 +382,10 @@ Recall cross-validation merupakan proses mengukur recall (sensitivitas atau true
   Gambar 19 – Confussion Matrix Logistic Regression dengan Hyperparameter Tuning <br>
 
 ### **Logistic Regression : Feature Importances**
+Langkah berikutnya dilakukan pengukuran pengaruh fitur terhadap model berdasarkan nilai absolut dari koefisien fitur dalam model. Dengan kata lain, fitur dengan koefisien yang lebih besar (baik positif maupun negatif) dianggap lebih penting, karena perubahan dalam fitur tersebut akan berdampak lebih signifikan terhadap output model. <br>
+
+<p align="center">
+  Gambar 20 – Rank features by the absolute value of their coefficients <br>
 
 <br>
 
