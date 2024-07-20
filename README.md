@@ -395,5 +395,5 @@ Langkah berikutnya dilakukan pengukuran pengaruh fitur terhadap model berdasarka
 ---
 
 #### Sumber
-Caruana, R. & Niculescu-Mizil, A., 2006. An empirical comparison of supervised learning algorithms. Proceedings of the 23rd International Conference on Machine Learning, pp.161-168. doi: 10.1145/1143844.1143865.
+Caruana, R. & Niculescu-Mizil, A., 2006. An empirical comparison of supervised learning algorithms. Proceedings of the 23rd International Conference on Machine Learning, pp.161-168. doi: 10.1145/1143844.1143865. <br>
 Powers, D. M., 2011. Evaluation: From Precision, Recall and F-Measure to ROC, Informedness, Markedness & Correlation. [online] Available at: https://doi.org/10.48550/arXiv.2010.16061 [Accessed 16 July 2024].
