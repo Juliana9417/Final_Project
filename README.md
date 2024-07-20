@@ -1,4 +1,4 @@
-# 🛒 **Unlocking Online Shopper Behavior** 🛒
+![image](https://github.com/user-attachments/assets/54f04bd0-b954-47af-b80b-1de398fb3d85)# 🛒 **Unlocking Online Shopper Behavior** 🛒
 ---
 ## 📂 **Stage 0 : Problem Statement**
 ### Problem Statement
@@ -393,10 +393,10 @@ Nilai Recall (cross-validation) dari model Logistic Regression dengan Hyperparam
 Langkah berikutnya dilakukan pengukuran pengaruh fitur terhadap model berdasarkan nilai absolut dari koefisien fitur dalam model. Dengan kata lain, fitur dengan koefisien yang lebih besar (baik positif maupun negatif) dianggap lebih penting, karena perubahan dalam fitur tersebut akan berdampak lebih signifikan terhadap output model. <br>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/74215172-197f-4ea0-8dec-b71d19da99a1">
+  <img src="https://github.com/user-attachments/assets/acf3cae7-a1a1-4bc3-896b-03279affef92">
    </p>  
 <p align="center">
-  Gambar 20 – Rank features by the absolute value of their coefficients <br>
+  Gambar 20 – Feature Importances by the absolute value of their coefficients <br>
 
 **Business Insight :**
 <br>
