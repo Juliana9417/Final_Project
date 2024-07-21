@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/54f04bd0-b954-47af-b80b-1de398fb3d85)# 🛒 **Unlocking Online Shopper Behavior** 🛒
+# 🛒 **Unlocking Online Shopper Behavior** 🛒
 ---
 ## 📂 **Stage 0 : Problem Statement**
 ### Problem Statement
