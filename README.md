@@ -391,12 +391,6 @@ Nilai Recall (cross-validation) dari model Logistic Regression dengan Hyperparam
 <p align="center">
   Gambar 19 – Confussion Matrix Logistic Regression dengan Hyperparameter Tuning <br>
 <br>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/1ee883a5-11ad-43d8-9096-9ee5b486744a">
-   </p>  
-<p align="center">
-  Gambar 20 – Count each label after and before applying model (X) <br>
-
 best_model (Logistic Regression dengan Hyperparameter Tuning terbaik) lebih moderat dan lebih seimbang dalam hal recall dengan ukuran/metrik evaluasi lainnya. Dalam konteks bisnis, model ini merupakan pilihan yang lebih baik karena tetap menjaga keseimbangan antara revenue (tujuan utama) dan cost (bukan tujuan utama namun perlu dipertimbangkan juga).
 
 ### **Logistic Regression : Feature Importances**
