@@ -369,6 +369,7 @@ Pemisahan dataset train dan test dengan proporsi **70 : 30**.
 **Recall (cross validation)** digunakan sebagai matrix evaluasi dengan fokus terhadap nilai **True Positive** dan **False Negative** dalam membandingkan performa antar algoritma model klasifikasi mechine learning (Supervised Learning). <br>
 
 Menurut Powers, **recall (sensitivitas atau true positive rate)** merupakan metrik evaluasi yang penting, terutama dalam kasus di mana deteksi positif benar (**true positives**) lebih kritis dibandingkan dengan deteksi negatif salah (false negatives). Powers juga menjelaskan bahwa kesalahan tipe II (**false negatives**) memiliki konsekuensi yang lebih serius dibandingkan dengan kesalahan tipe I (false positives). <br>
+
 **Cross-validation** digunakan sebagai teknik evaluasi recall dari model machine learning untuk memastikan model tidak hanya dioptimalkan untuk dataset tertentu, tetapi memiliki generalisasi yang baik pada dataset lainnya (Caruana & Niculescu-Mizil, 2006). <br>
 
 Kasus dalam dataset ini dimana perusahaan ingin meningkatkan revenue. Maka dari itu, recall (cross validation) menjadi fokus utama untuk menghindari model gagal mengidentifikasi pelanggan yang benar-benar menghasilkan revenue. Dengan memperbesar true positives dan mengurangi false negatives, diharapkan lebih banyak peluang revenue yang tidak terlewatkan oleh perusahaan.
@@ -377,7 +378,7 @@ Kasus dalam dataset ini dimana perusahaan ingin meningkatkan revenue. Maka dari 
 
 Model dengan nilai recall (cross validation) mendekati 1 menunjukkan performa yang lebih baik dalam mendeteksi semua kejadian positif. <br>
 
-Setelah uji coba beberapa algoritma model klasifikasi mechine learning (Supervised Learning) yaitu Logistic Regression, Decission Tree, Random Forest, AdaBoost, dan XGBoost. Model algoritma **Logistic Regression** dengan Hyperparameter Tuning dipilih karena memiliki nilai Recall (cross validation) tertinggi dengan nilai True Positive tertinggi dan False Negative terendah daripada algoritma lainnya.<br>
+Setelah uji coba beberapa algoritma model klasifikasi yaitu Logistic Regression, Decission Tree, Random Forest, AdaBoost, dan XGBoost. Model algoritma **Logistic Regression** dengan Hyperparameter Tuning dipilih karena memiliki nilai Recall (cross validation) tertinggi dengan nilai True Positive tertinggi dan False Negative terendah daripada algoritma lainnya.<br>
 
 Berikut hasil evaluasi dari prediksi model Logistic Regression setelah dilakukan Hyperparameter Tuning.
 <p align="center">
