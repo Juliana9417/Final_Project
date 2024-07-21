@@ -372,7 +372,7 @@ Menurut Powers, **recall (sensitivitas atau true positive rate)** merupakan metr
 
 **Cross-validation** digunakan sebagai teknik evaluasi recall dari model machine learning untuk memastikan model tidak hanya dioptimalkan untuk dataset tertentu, tetapi memiliki generalisasi yang baik pada dataset lainnya (Caruana & Niculescu-Mizil, 2006). <br>
 
-Kasus dalam dataset ini dimana perusahaan ingin meningkatkan revenue. Maka dari itu, recall (cross validation) menjadi fokus utama untuk menghindari model gagal mengidentifikasi pelanggan yang benar-benar menghasilkan revenue. Dengan memperbesar true positives dan mengurangi false negatives, diharapkan lebih banyak peluang revenue yang tidak terlewatkan oleh perusahaan.
+Kasus dalam dataset ini dimana perusahaan ingin meningkatkan revenue. Maka dari itu, recall (cross validation) menjadi fokus utama untuk menghindari model gagal mengidentifikasi pelanggan yang benar-benar menghasilkan revenue. Dengan nilai true positives tinggi dan false negatives rendah, diharapkan lebih banyak peluang revenue yang tidak terlewatkan oleh perusahaan.
 
 ### **Logistic Regression : Modeling and Evaluation**
 
