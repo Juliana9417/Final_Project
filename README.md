@@ -369,11 +369,12 @@ Pemisahan dataset train dan test dengan proporsi **70 : 30**.
 Setelah uji coba beberapa algoritma model klasifikasi mechine learning (Supervised Learning) yaitu Logistic Regression, Decission Tree, Random Forest, AdaBoost, dan XGBoost. Model algoritma **Logistic Regression** dengan Hyperparameter Tuning, memiliki performa paling baik. Recall (cross validation) digunakan sebagai matrix evaluasi dalam membandingkan performa antar algoritma model. <br>
 
 ### **Logistic Regression : Modeling and Evaluation**
-Recall cross-validation merupakan proses mengukur recall (sensitivitas atau true positive rate) dari sebuah model machine learning dengan teknik cross-validation. Recall dievaluasi menggunakan cross-validation untuk memastikan bahwa model tidak hanya dioptimalkan untuk dataset tertentu, tetapi memiliki generalisasi yang baik pada data baru lainnya (Caruana & Niculescu-Mizil, 2006). <br>
+Recall (sensitivitas atau true positive rate) dari model machine learning dievaluasi menggunakan teknik cross-validation untuk memastikan bahwa model tidak hanya dioptimalkan untuk dataset tertentu, tetapi memiliki generalisasi yang baik pada dataset lainnya (Caruana & Niculescu-Mizil, 2006). <br>
 
 Menurut Powers, recall merupakan metrik evaluasi yang penting, terutama dalam kasus di mana deteksi positif benar (**true positives**) lebih kritis dibandingkan dengan deteksi negatif salah (false negatives). Powers juga menjelaskan bahwa kesalahan tipe II (**false negatives**) memiliki konsekuensi yang lebih serius dibandingkan dengan kesalahan tipe I (false positives). <br>
 
-Seperti kasus dalam dataset ini dimana perusahaan tidak ingin kehilangan peluang dari pelanggan yang memiliki behavior yang berpotensi memberikan revenue kepada perusahaan. Maka dari itu, model dengan nilai recall mendekati 1 menunjukkan performa yang lebih baik dalam mendeteksi semua kejadian positif. <br>
+Seperti kasus dalam dataset ini dimana perusahaan ingin meningkatkan revenue. Maka dari itu, nilai **true positives** perlu dimaksimalkan dan **false negative** dapat diminimalisasi untuk menghindari model gagal mengidentifikasi pelanggan yang benar-benar menghasilkan revenue. Dengan memperbesar true positives dan mengurangi false negatives, diharapkan lebih banyak peluang revenue yang tidak terlewatkan oleh perusahaan. 
+Model dengan nilai recall mendekati 1 menunjukkan performa yang lebih baik dalam mendeteksi semua kejadian positif. <br>
 
 Berikut hasil evaluasi dari prediksi model Logistic Regression setelah dilakukan Hyperparameter Tuning.
 <p align="center">
