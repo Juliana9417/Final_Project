@@ -391,6 +391,7 @@ Nilai Recall (cross-validation) dari model Logistic Regression dengan Hyperparam
 <p align="center">
   Gambar 19 – Confussion Matrix Logistic Regression dengan Hyperparameter Tuning <br>
 <br>
+</p>
 best_model (Logistic Regression dengan Hyperparameter Tuning terbaik) lebih moderat dan lebih seimbang dalam hal recall dengan ukuran/metrik evaluasi lainnya. Dalam konteks bisnis, model ini merupakan pilihan yang lebih baik karena tetap menjaga keseimbangan antara revenue (tujuan utama) dan cost (bukan tujuan utama namun perlu dipertimbangkan juga).
 
 ### **Logistic Regression : Feature Importances**
@@ -400,7 +401,7 @@ Langkah berikutnya dilakukan pengukuran pengaruh fitur terhadap model berdasarka
   <img src="https://github.com/user-attachments/assets/acf3cae7-a1a1-4bc3-896b-03279affef92">
    </p>  
 <p align="center">
-  Gambar 21 – Feature Importances by the absolute value of their coefficients <br>
+  Gambar 20 – Feature Importances by the absolute value of their coefficients <br>
 <br>
 
 Fitur PageValues memiliki koefisien positif (0.02854369)menunjukkan bahwa PageValues berdampak positif terhadap target variabel, tetapi pengaruhnya tidak besar.<br>
@@ -411,7 +412,7 @@ Fitur lainnya (Month_encoded, VisitorType_isNew_Visitor, SpecialDay, dan Page_Co
   <img src="https://github.com/user-attachments/assets/1beee733-23fb-40db-becd-e8c386b46a0c">
    </p>  
 <p align="center">
-  Gambar 22 – Feature Importances by the SHAP value (impact on model output) <br>
+  Gambar 21 – Feature Importances by the SHAP value (impact on model output) <br>
 <br>
   
 PageValues memiliki nilai SHAP yang tinggi, berarti fitur ini memiliki pengaruh besar pada prediksi model. Nilai SHAP untuk PageValues cenderung positif yang artinya peningkatan PageValues berdampak pada peningkatan variabel target.
