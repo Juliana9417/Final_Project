@@ -366,19 +366,19 @@ Pemisahan dataset train dan test dengan proporsi **70 : 30**.
 
 ## 📂 **Stage 3 : Modelling**
 
-**Recall (cross validation)** digunakan sebagai matrix evaluasi dengan fokus terhadap nilai **True Positive** dan **False Negative** dalam membandingkan performa antar algoritma model klasifikasi mechine learning (Supervised Learning). <br>
+**Recall (cross validation)** digunakan sebagai matrix evaluasi dengan fokus terhadap nilai **False Negative** dalam membandingkan performa antar algoritma model klasifikasi mechine learning (Supervised Learning). <br>
 
 Menurut Powers, **recall (sensitivitas atau true positive rate)** merupakan metrik evaluasi yang penting, terutama dalam kasus di mana deteksi positif benar (**true positives**) lebih kritis dibandingkan dengan deteksi negatif salah (false negatives). Powers juga menjelaskan bahwa kesalahan tipe II (**false negatives**) memiliki konsekuensi yang lebih serius dibandingkan dengan kesalahan tipe I (false positives). <br>
 
 **Cross-validation** digunakan sebagai teknik evaluasi recall dari model machine learning untuk memastikan model tidak hanya dioptimalkan untuk dataset tertentu, tetapi memiliki generalisasi yang baik pada dataset lainnya (Caruana & Niculescu-Mizil, 2006). <br>
 
-Kasus dalam dataset ini dimana perusahaan ingin meningkatkan revenue. Maka dari itu, recall (cross validation) menjadi fokus utama untuk menghindari model gagal mengidentifikasi pelanggan yang benar-benar menghasilkan revenue. Dengan nilai true positives tinggi dan false negatives rendah, diharapkan lebih banyak peluang revenue yang tidak terlewatkan oleh perusahaan.
+Kasus dalam dataset ini dimana perusahaan ingin meningkatkan revenue. Maka dari itu, recall (cross validation) menjadi fokus utama untuk menghindari model gagal mengidentifikasi pelanggan yang benar-benar menghasilkan revenue. Dengan nilai false negatives rendah, diharapkan lebih banyak peluang revenue yang tidak terlewatkan oleh perusahaan.
 
 ### **Logistic Regression : Modeling and Evaluation**
 
 Model dengan nilai recall (cross validation) mendekati 1 menunjukkan performa yang lebih baik dalam mendeteksi semua kejadian positif. <br>
 
-Setelah uji coba beberapa algoritma model klasifikasi yaitu Logistic Regression, Decission Tree, Random Forest, AdaBoost, dan XGBoost. Model algoritma **Logistic Regression** dengan Hyperparameter Tuning dipilih karena memiliki nilai Recall (cross validation) tertinggi dengan nilai True Positive tertinggi dan False Negative terendah daripada algoritma lainnya.<br>
+Setelah uji coba beberapa algoritma model klasifikasi yaitu Logistic Regression, Decission Tree, Random Forest, AdaBoost, dan XGBoost. Model algoritma **Logistic Regression** dengan Hyperparameter Tuning dipilih karena memiliki nilai Recall (cross validation) tertinggi dengan nilai False Negative terendah daripada algoritma lainnya.<br>
 
 Berikut hasil evaluasi dari prediksi model Logistic Regression setelah dilakukan Hyperparameter Tuning.
 <p align="center">
@@ -403,10 +403,21 @@ Langkah berikutnya dilakukan pengukuran pengaruh fitur terhadap model berdasarka
 <p align="center">
   Gambar 20 – Feature Importances by the absolute value of their coefficients <br>
 
-**Business Insight :**
-<br>
+**Business Insight :** <br>
+1. Pentingnya Pengalaman Pengguna: 'Page values' yang tinggi menunjukkan bahwa pengunjung yang terlibat secara aktif dengan halaman-halaman situs cenderung lebih mungkin untuk membeli. Ini menekankan pentingnya pengalaman pengguna yang baik dan menarik untuk meningkatkan kemungkinan konversi.<br>
+2. Relevansi Konten: Halaman-halaman dengan 'page values' tinggi mungkin memiliki konten yang lebih relevan dan informatif bagi pengunjung. Konten ini dapat mencakup deskripsi produk yang jelas, testimoni pelanggan, ulasan produk, dan informasi lain yang membantu pengunjung membuat keputusan pembelian. <br>
+3. Perilaku Pembelian: Insight ini menunjukkan bahwa pengunjung yang lebih terlibat dengan konten situs web cenderung lebih cenderung untuk membeli. Ini bisa mencerminkan tahap perjalanan pembelian pengunjung dan faktor-faktor psikologis yang mempengaruhi keputusan pembelian. <br>
+
 **Rekomendasi Bisnis :**
 <br>
+1. Optimalkan Halaman Produk: Pastikan deskripsi produk, gambar, dan ulasan pelanggan disajikan dengan baik dan mudah diakses. Gunakan tata letak yang menarik dan intuitif untuk meningkatkan 'page values'. <br>
+2. Personalisasi Konten: Gunakan data pengunjung untuk menyesuaikan rekomendasi produk dan konten yang ditampilkan di halaman. Personalisasi dapat membantu meningkatkan relevansi konten dan minat pengunjung. <br>
+3. Uji A/B dan Analisis: Lakukan uji A/B untuk halaman-halaman kunci dan analisis lanjutan terhadap data 'page values' untuk memahami faktor apa yang paling mempengaruhi konversi. Ini dapat membantu mengidentifikasi perbaikan yang dapat dilakukan dengan cepat. <br>
+4. Peningkatan Pengalaman Pengguna: Fokus pada pengalaman pengguna yang responsif dan intuitif. Pastikan situs web mudah dinavigasi, cepat dimuat, dan menawarkan pengalaman yang menyenangkan bagi pengunjung. <br>
+5. Monitoring dan Optimasi Terus-menerus: Terus pantau metrik 'page values' dan konversi untuk melihat bagaimana perubahan yang diterapkan memengaruhi perilaku pengunjung. Optimalkan strategi berdasarkan temuan dari analisis ini secara berkala.
+
+<br>
+
 
 ---
 
