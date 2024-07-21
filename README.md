@@ -371,13 +371,11 @@ Menurut Powers, **recall (sensitivitas atau true positive rate)** merupakan metr
 
 **Cross-validation** digunakan sebagai teknik evaluasi recall dari model machine learning untuk memastikan model tidak hanya dioptimalkan untuk dataset tertentu, tetapi memiliki generalisasi yang baik pada dataset lainnya (Caruana & Niculescu-Mizil, 2006). <br>
 
-Kasus dalam dataset ini dimana perusahaan ingin meningkatkan revenue. Maka dari itu, recall (cross validation) menjadi fokus utama untuk menghindari model gagal mengidentifikasi pelanggan yang benar-benar menghasilkan revenue. Dengan nilai false negatives rendah, diharapkan lebih banyak peluang revenue yang tidak terlewatkan oleh perusahaan.
+Kasus dalam dataset ini dimana perusahaan ingin meningkatkan revenue. Maka dari itu, recall (cross validation) menjadi fokus utama untuk menghindari model gagal mengidentifikasi pelanggan yang benar-benar menghasilkan revenue. Dengan nilai false negatives rendah, diharapkan lebih banyak peluang revenue yang tidak terlewatkan oleh perusahaan. Model dengan nilai recall (cross validation) mendekati 1 menunjukkan performa yang lebih baik dalam mendeteksi semua kejadian positif. <br>
 
 ### **Logistic Regression : Modeling and Evaluation**
 
-Model dengan nilai recall (cross validation) mendekati 1 menunjukkan performa yang lebih baik dalam mendeteksi semua kejadian positif. <br>
-
-Setelah uji coba beberapa algoritma model klasifikasi yaitu Logistic Regression, Decission Tree, Random Forest, AdaBoost, dan XGBoost. Model algoritma **Logistic Regression** dengan Hyperparameter Tuning dipilih karena menunjukkan performa terbaik. Dalam hal ini, fokus utama model adalah peningkatan revenue yang diukur dengan hasil recall yang tinggi dan ideal (tanpa overfitting dan underfitting). Selain itu, cross-validation juga merupakan parameter penting dalam pemilihan algoritma untuk memastikan bahwa model memiliki performa yang konsisten dan dapat digeneralisasi dengan baik. Dengan mempertimbangkan recall yang tinggi dan hasil cross-validation yang baik, Logistic Regression memberikan keseimbangan optimal antara deteksi kasus positif dan penghindaran dari false negatives, sehingga mendukung tujuan akhir peningkatan revenue secara efektif.<br>
+Setelah uji coba beberapa algoritma model klasifikasi yaitu Logistic Regression, Decission Tree, Random Forest, AdaBoost, dan XGBoost. Model algoritma **Logistic Regression** dengan Hyperparameter Tuning dipilih karena menunjukkan performa terbaik. Dengan mempertimbangkan recall yang tinggi dan hasil cross-validation yang baik, Logistic Regression memberikan keseimbangan optimal antara deteksi kasus positif dan penghindaran dari false negatives, sehingga mendukung tujuan akhir peningkatan revenue secara efektif.<br>
 
 Berikut hasil evaluasi dari prediksi model Logistic Regression setelah dilakukan Hyperparameter Tuning.
 <p align="center">
@@ -392,6 +390,14 @@ Nilai Recall (cross-validation) dari model Logistic Regression dengan Hyperparam
    </p>  
 <p align="center">
   Gambar 19 – Confussion Matrix Logistic Regression dengan Hyperparameter Tuning <br>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1ee883a5-11ad-43d8-9096-9ee5b486744a">
+   </p>  
+<p align="center">
+  Gambar 20 – Count each label after and before applying model (X) <br>
+
+best_model (Logistic Regression dengan Hyperparameter Tuning terbaik) lebih moderat dan lebih seimbang dalam hal recall dengan ukuran/metrik evaluasi lainnya. Dalam konteks bisnis, model ini merupakan pilihan yang lebih baik karena tetap menjaga keseimbangan antara revenue (tujuan utama) dan cost (bukan tujuan utama namun perlu dipertimbangkan juga).
 
 ### **Logistic Regression : Feature Importances**
 Langkah berikutnya dilakukan pengukuran pengaruh fitur terhadap model berdasarkan nilai absolut dari koefisien fitur dalam model. Dengan kata lain, fitur dengan koefisien yang lebih besar (baik positif maupun negatif) dianggap lebih penting, karena perubahan dalam fitur tersebut akan berdampak lebih signifikan terhadap output model. <br>
@@ -400,7 +406,7 @@ Langkah berikutnya dilakukan pengukuran pengaruh fitur terhadap model berdasarka
   <img src="https://github.com/user-attachments/assets/acf3cae7-a1a1-4bc3-896b-03279affef92">
    </p>  
 <p align="center">
-  Gambar 20 – Feature Importances by the absolute value of their coefficients <br>
+  Gambar 21 – Feature Importances by the absolute value of their coefficients <br>
 <br>
 
 Fitur PageValues memiliki koefisien positif (0.02854369)menunjukkan bahwa PageValues berdampak positif terhadap target variabel, tetapi pengaruhnya tidak besar.<br>
@@ -411,7 +417,7 @@ Fitur lainnya (Month_encoded, VisitorType_isNew_Visitor, SpecialDay, dan Page_Co
   <img src="https://github.com/user-attachments/assets/1beee733-23fb-40db-becd-e8c386b46a0c">
    </p>  
 <p align="center">
-  Gambar 21 – Feature Importances by the SHAP value (impact on model output) <br>
+  Gambar 22 – Feature Importances by the SHAP value (impact on model output) <br>
 <br>
   
 PageValues memiliki nilai SHAP yang tinggi, berarti fitur ini memiliki pengaruh besar pada prediksi model. Nilai SHAP untuk PageValues cenderung positif yang artinya peningkatan PageValues berdampak pada peningkatan variabel target.
