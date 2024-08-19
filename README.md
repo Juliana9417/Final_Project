@@ -241,7 +241,7 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
     Drop semua data duplikat dengan .drop_duplicates()
        
    <p align="center">
-     <img src="https://github.com/annidakhoirunnisa/preprocessing_images/blob/main/drop_duplicates.png">
+ ![drop duplikat](https://github.com/user-attachments/assets/8343acf6-c640-49ed-af1c-79c0f51b0258)
    </p>
    <p align="center">
      Gambar 11 - Handling duplikat <br>
