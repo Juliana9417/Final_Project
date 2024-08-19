@@ -232,6 +232,7 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
    
    <p align="center">
    ![missing value](https://github.com/user-attachments/assets/6067b3e6-658c-41d8-9745-88b8d6378643)
+     
    </p>
    <p align="center">
      Gambar 10 - Handling missing values <br>
