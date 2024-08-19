@@ -257,9 +257,8 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
 <br>
 6. Feature Encoding
       
-   <p align="center">
-     <img src="https://github.com/annidakhoirunnisa/preprocessing_images/blob/main/encoding.png">
-   </p>
+![encoding](https://github.com/user-attachments/assets/214a3602-02a7-4038-b1c9-a6977dfed28c)
+
    <p align="center">
      Gambar 12 - Feature Encoding <br>
    </p>
@@ -273,10 +272,9 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
 
 1. Feature Extraction<br>
    A. Feature Tambahan untuk modelling
-    
-   <p align="center">
-     <img src="https://github.com/annidakhoirunnisa/preprocessing_images/blob/main/feature_extraction.png">
-   </p>
+
+![extraction](https://github.com/user-attachments/assets/a91b229e-2008-4a6a-ae1f-a7db45d8b9e8)
+
    <p align="center">
      Gambar 13 - Feature Engineering <br>
    </p>
@@ -315,10 +313,9 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
   
 ### **Feature Selection**
   1. Fitur kategorikal - target
-     
-   <p align="center">
-     <img src="https://github.com/annidakhoirunnisa/preprocessing_images/blob/main/chi2_test.png">
-   </p>
+
+![chi2](https://github.com/user-attachments/assets/1469dd79-94cc-43c7-9758-0e1836ac79a1)
+
    <p align="center">
      Gambar 14 - Chi2 Test <br>
    </p>
@@ -329,8 +326,8 @@ Berdasarkan Uji Chi-square dipilih 3 feature yang memiliki nilai korelasi tertin
 
   2. Fitur numerikal - target
     
-   <p align="center">
-     <img src="https://github.com/annidakhoirunnisa/preprocessing_images/blob/main/annova_test.png">
+![anova](https://github.com/user-attachments/assets/3ff3d484-ebf5-4822-b22d-4e16d36c32c8)
+
    </p>
    <p align="center">
      Gambar 15 - Annova Test <br>
@@ -343,18 +340,16 @@ Berdasarkan Uji Annova dipilih 3 feature yang memiliki nilai korelasi tertinggi 
 Pemisahan dataset train dan test dengan proporsi **70 : 30**.
 
 ### **Handling Class Imbalance**
-    
-   <p align="center">
-     <img src="https://github.com/annidakhoirunnisa/preprocessing_images/blob/main/class_imbalance.png">
-   </p>
+
+![imbalance class](https://github.com/user-attachments/assets/2158dab4-fb73-4cdc-b24e-fd258dec510c)
+   
    <p align="center">
      Gambar 16 - Class Imbalance <br>
    </p>
 <br>
     
-   <p align="center">
-     <img src="https://github.com/annidakhoirunnisa/preprocessing_images/blob/main/sampling.png">
-   </p>
+![resampling](https://github.com/user-attachments/assets/ff35f7fb-34fa-406d-9ae8-25f884382c0f)
+
    <p align="center">
      Gambar 17 - Sampling Methods <br>
    </p>
