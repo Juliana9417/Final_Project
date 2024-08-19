@@ -231,7 +231,7 @@ Semua kolom numerik skew (dilihat dari perbedaan antara mean > median)
     Drop semua missing values dengan .dropna()
    
    <p align="center">
-     <![missing value](https://github.com/user-attachments/assets/12b96fe3-8331-41bc-846d-a84139c50e00)>
+     ![missing value](https://github.com/user-attachments/assets/98375bc1-ace7-426a-991e-123f8a5bd975)
    </p>
    
    <p align="center">
