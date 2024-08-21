@@ -12,15 +12,15 @@
 
 
 ### Goals
-- Meningkatkan revenue dari e-commerce tersebut.
+- Meningkatkan CVR dengan menargetkan pemasaran pada pelanggan yang berpeluang tinggi untuk membeli.
 
 
 ### Objectives
 - Membuat model prediktif untuk memprediksi pengunjung melakukan transaksi di e-commerce.
-- Menganalisis faktor-faktor yang mempengaruhipengunjungmelakukan transaksi
+- Menganalisis faktor-faktor yang mempengaruhi pengunjung melakukan transaksi
 
 ### Business Matrics
--  Revenue Conversion Rate
+-  Conversion Rate (Revenue)
 <br>
 
 ---
